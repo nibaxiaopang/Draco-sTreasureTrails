@@ -2,17 +2,19 @@
 //  TreasureNavigationController.swift
 //  DracosTreasureTrails
 //
-//  Created by jin fu on 2024/12/24.
+//  Created by Draco’s Treasure Trails on 2024/12/24.
 //
 
 import UIKit
-
+import IQKeyboardManagerSwift
 class TreasureNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        IQKeyboardManager.shared.isEnabled = true
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {

@@ -2,13 +2,13 @@
 //  FillInTheBlanksViewController.swift
 //  DracosTreasureTrails
 //
-//  Created by jin fu on 2024/12/24.
+//  Created by Draco’s Treasure Trails on 2024/12/24.
 //
 
 
 import UIKit
 
-class FillInTheBlanksViewController: UIViewController {
+class TreasureFillInTheBlanksViewController: UIViewController {
 
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var blanksCollectionView: UICollectionView!
@@ -197,14 +197,14 @@ class FillInTheBlanksViewController: UIViewController {
     }
 }
     
-extension FillInTheBlanksViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension TreasureFillInTheBlanksViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return blanks.count
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BlankCell", for: indexPath) as! BlankCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "BlankCell", for: indexPath) as! TreasureBlankCell
         cell.configure(with: blanks[indexPath.item])
         return cell
     }

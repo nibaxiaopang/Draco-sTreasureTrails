@@ -7,4 +7,6 @@ target 'DracosTreasureTrails' do
 
   # Pods for DracosTreasureTrails
   pod 'IQKeyboardManagerSwift'
+  pod 'Firebase/Messaging'
+  pod 'AppsFlyerFramework'
 end

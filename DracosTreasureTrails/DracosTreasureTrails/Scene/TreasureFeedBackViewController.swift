@@ -2,13 +2,15 @@
 //  FeedBackVC.swift
 //  DracosTreasureTrails
 //
-//  Created by jin fu on 2024/12/24.
+//  Created by Draco’s Treasure Trails on 2024/12/24.
 //
 
 
 import UIKit
 
-class FeedBackVC: UIViewController {
+import IQKeyboardManagerSwift
+
+class TreasureFeedBackViewController: UIViewController {
     
     //MARK: - Declare IBOutlet
     @IBOutlet weak var stackView: UIStackView!
@@ -25,6 +27,7 @@ class FeedBackVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureStarButtons()
+        IQKeyboardManager.shared.isEnabled = true
         navigationController?.navigationBar.isHidden = false
     }
     
@@ -111,9 +114,9 @@ class FeedBackVC: UIViewController {
         
         if isStarSelected {
             clearAllStars()
-            Utils.showAlert(title: "Thanks for feedback", message: "Your feedback added successfully", from: self)
+            TreasureUtils.showAlert(title: "Thanks for feedback", message: "Your feedback added successfully", from: self)
         } else {
-            Utils.showAlert(title: "No Selection", message: "Please select a rating before submitting.", from: self)
+            TreasureUtils.showAlert(title: "No Selection", message: "Please select a rating before submitting.", from: self)
         }
     }
     

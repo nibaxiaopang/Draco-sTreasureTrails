@@ -2,17 +2,17 @@
 //  ImageQuizViewController.swift
 //  DracosTreasureTrails
 //
-//  Created by jin fu on 2024/12/24.
+//  Created by Draco’s Treasure Trails on 2024/12/24.
 //
 
 import UIKit
 
-class ImageQuizViewController: UIViewController {
+class TreasureImageQuizViewController: UIViewController {
     @IBOutlet weak var questionLabel: UILabel!
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var scoreLabel: UILabel!
 
-    var questions = [Question]()
+    var questions = [TreasureQuestion]()
     var currentQuestionIndex = 0
     var score = 0
     var shuffledImages = [String]() // Holds shuffled images for display
@@ -48,92 +48,92 @@ class ImageQuizViewController: UIViewController {
     func setupQuestions() {
         
         questions = [
-            Question(
+            TreasureQuestion(
                 questionText: "Which is the Eiffel Tower?",
                 correctImage: "eiffel_tower", // Correct image name
                 wrongImages: ["statue_of_liberty", "big_ben", "pyramid"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is the Statue of Liberty?",
                 correctImage: "statue_of_liberty",
                 wrongImages: ["eiffel_tower", "big_ben", "pyramid"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is the Great Wall of China?",
                 correctImage: "great_wall",
                 wrongImages: ["taj_mahal", "colosseum", "christ_the_redeemer"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is the Taj Mahal?",
                 correctImage: "taj_mahal",
                 wrongImages: ["great_wall", "colosseum", "christ_the_redeemer"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is the Colosseum?",
                 correctImage: "colosseum",
                 wrongImages: ["taj_mahal", "great_wall", "christ_the_redeemer"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is the Golden Gate Bridge?",
                 correctImage: "golden_gate",
                 wrongImages: ["brooklyn_bridge", "tower_bridge", "sydney_harbour_bridge"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is a Tiger?",
                 correctImage: "tiger",
                 wrongImages: ["lion", "cheetah", "leopard"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is an Elephant?",
                 correctImage: "elephant",
                 wrongImages: ["hippo", "rhino", "camel"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is the Leaning Tower of Pisa?",
                 correctImage: "leaning_tower",
                 wrongImages: ["eiffel_tower", "big_ben", "statue_of_liberty"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is a Penguin?",
                 correctImage: "penguin",
                 wrongImages: ["duck", "goose", "swan"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is a Peacock?",
                 correctImage: "peacock",
                 wrongImages: ["sparrow", "parrot", "owl"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is the Sydney Opera House?",
                 correctImage: "sydney_opera_house",
                 wrongImages: ["christ_the_redeemer", "big_ben", "pyramid"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is a Polar Bear?",
                 correctImage: "polar_bear",
                 wrongImages: ["grizzly_bear", "panda", "brown_bear"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is a Panda?",
                 correctImage: "panda",
                 wrongImages: ["koala", "polar_bear", "sloth"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is the Mount Everest?",
                 correctImage: "mount_everest",
                 wrongImages: ["k2", "kilimanjaro", "mount_fuji"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is the Burj Khalifa?",
                 correctImage: "burj_khalifa",
                 wrongImages: ["empire_state_building", "petronas_towers", "willis_tower"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is the Great Sphinx of Giza?",
                 correctImage: "sphinx",
                 wrongImages: ["pyramid", "colosseum", "taj_mahal"]
             ),
-            Question(
+            TreasureQuestion(
                 questionText: "Which is the Tower Bridge?",
                 correctImage: "tower_bridge",
                 wrongImages: ["brooklyn_bridge", "sydney_harbour_bridge", "golden_gate"]
@@ -197,14 +197,14 @@ class ImageQuizViewController: UIViewController {
         showQuestion()
     }
 }
-extension ImageQuizViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension TreasureImageQuizViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 4 // Always show 4 options
     }
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! ImageCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ImageCell", for: indexPath) as! TreasureImageCell
         let imageName = shuffledImages[indexPath.item]
         cell.configure(with: imageName)
         return cell

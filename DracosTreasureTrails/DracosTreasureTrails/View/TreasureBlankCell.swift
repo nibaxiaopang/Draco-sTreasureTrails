@@ -2,12 +2,12 @@
 //  BlankCell.swift
 //  DracosTreasureTrails
 //
-//  Created by jin fu on 2024/12/24.
+//  Created by Draco’s Treasure Trails on 2024/12/24.
 //
 
 import UIKit
 
-class BlankCell: UICollectionViewCell {
+class TreasureBlankCell: UICollectionViewCell {
     @IBOutlet weak var letterLabel: UILabel!
 
     func configure(with letter: String) {

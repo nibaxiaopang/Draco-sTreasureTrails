@@ -2,12 +2,13 @@
 //  Utils.swift
 //  DracosTreasureTrails
 //
-//  Created by jin fu on 2024/12/24.
+//  Created by Draco’s Treasure Trails on 2024/12/24.
 //
 
 import UIKit
 
-class Utils {
+class TreasureUtils
+{
     static func showAlert(title: String, message: String, from viewController: UIViewController) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
         

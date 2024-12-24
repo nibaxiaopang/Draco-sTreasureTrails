@@ -1,0 +1,66 @@
+
+/* Class = "UIButton"; normalTitle = "Setting"; ObjectID = "29x-hK-v3X"; */
+"29x-hK-v3X.normalTitle" = "Setting";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "5O9-SO-R31"; */
+"5O9-SO-R31.normalTitle" = "Submit";
+
+/* Class = "UINavigationItem"; title = "Home"; ObjectID = "6UQ-YO-Nxp"; */
+"6UQ-YO-Nxp.title" = "Home";
+
+/* Class = "UIButton"; normalTitle = "SnapIQ Challenge"; ObjectID = "Akc-2t-d4z"; */
+"Akc-2t-d4z.normalTitle" = "SnapIQ Challenge";
+
+/* Class = "UIButton"; normalTitle = "Share"; ObjectID = "CFW-rg-PDl"; */
+"CFW-rg-PDl.normalTitle" = "Share";
+
+/* Class = "UINavigationItem"; title = "Setting"; ObjectID = "IFi-jS-4Jo"; */
+"IFi-jS-4Jo.title" = "Setting";
+
+/* Class = "UIButton"; normalTitle = "About Us"; ObjectID = "Ll9-fK-g6R"; */
+"Ll9-fK-g6R.normalTitle" = "About Us";
+
+/* Class = "UIButton"; normalTitle = "Privacy Policy"; ObjectID = "PmA-jt-X5L"; */
+"PmA-jt-X5L.normalTitle" = "Privacy Policy";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "QXu-vk-6gz"; */
+"QXu-vk-6gz.text" = "Label";
+
+/* Class = "UITextView"; text = "Welcome to Draco’s Treasure Trails\n\nEmbark on an epic adventure with Draco’s Treasure Trails, where thrilling brain games and exciting educational challenges await! Guided by Draco, a wise and friendly dragon, you’ll test your skills, sharpen your mind. Perfect for players of all ages, this app blends fun with intellectual growth for an unforgettable experience!\n\nHow to Play:\n\t1.\tChoose Your Game: Select between SnapIQ Challenge or WordQuest to begin your journey.\n\t2.\tSnapIQ Challenge: Match the correct image to the question and sharpen your analytical skills.\n\t3.\tWordQuest: Solve word puzzles by filling in the blanks with the right letters to enhance your vocabulary.\n\nWhy You’ll Love It:\n\t•\t🐉 Dragon-Guided Adventures: Let Draco inspire and motivate you as you navigate challenging trails.\n\t•\t🧠 Brain-Boosting Fun: Improve reflexes, memory, and cognitive abilities while having fun.\n\t•\t✨ Interactive Gameplay: Enjoy dynamic visuals, engaging puzzles, and immersive sound effects.\n\t•\t🌟 Educational Value: Develop skills in problem-solving, strategy, and language while exploring the trails.\n\t•\t🚀 Accessible Anytime: Play on the go or during a relaxing break—Draco’s trails are always open!\n\nJoin the Adventure Today!\n\nWith Draco’s Treasure Trails, learning and fun go hand in hand. Dive into this magical world of puzzles and adventure, and let Draco guide you to victory!"; ObjectID = "VR9-HN-qfW"; */
+"VR9-HN-qfW.text" = "Welcome to Draco’s Treasure Trails\n\nEmbark on an epic adventure with Draco’s Treasure Trails, where thrilling brain games and exciting educational challenges await! Guided by Draco, a wise and friendly dragon, you’ll test your skills, sharpen your mind. Perfect for players of all ages, this app blends fun with intellectual growth for an unforgettable experience!\n\nHow to Play:\n\t1.\tChoose Your Game: Select between SnapIQ Challenge or WordQuest to begin your journey.\n\t2.\tSnapIQ Challenge: Match the correct image to the question and sharpen your analytical skills.\n\t3.\tWordQuest: Solve word puzzles by filling in the blanks with the right letters to enhance your vocabulary.\n\nWhy You’ll Love It:\n\t•\t🐉 Dragon-Guided Adventures: Let Draco inspire and motivate you as you navigate challenging trails.\n\t•\t🧠 Brain-Boosting Fun: Improve reflexes, memory, and cognitive abilities while having fun.\n\t•\t✨ Interactive Gameplay: Enjoy dynamic visuals, engaging puzzles, and immersive sound effects.\n\t•\t🌟 Educational Value: Develop skills in problem-solving, strategy, and language while exploring the trails.\n\t•\t🚀 Accessible Anytime: Play on the go or during a relaxing break—Draco’s trails are always open!\n\nJoin the Adventure Today!\n\nWith Draco’s Treasure Trails, learning and fun go hand in hand. Dive into this magical world of puzzles and adventure, and let Draco guide you to victory!";
+
+/* Class = "UIButton"; normalTitle = "FeedBack"; ObjectID = "WDW-jt-GHI"; */
+"WDW-jt-GHI.normalTitle" = "FeedBack";
+
+/* Class = "UIButton"; normalTitle = "WordQuest"; ObjectID = "ahf-dj-agd"; */
+"ahf-dj-agd.normalTitle" = "WordQuest";
+
+/* Class = "UILabel"; text = "Welcome To \nDraco’s Treasure Trails"; ObjectID = "cTp-73-ltr"; */
+"cTp-73-ltr.text" = "Welcome To \nDraco’s Treasure Trails";
+
+/* Class = "UINavigationItem"; title = "FeedBack"; ObjectID = "eS0-El-EiK"; */
+"eS0-El-EiK.title" = "FeedBack";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "fNV-eo-HJ9"; */
+"fNV-eo-HJ9.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hVA-PH-AP1"; */
+"hVA-PH-AP1.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "WordQuest"; ObjectID = "jQJ-Td-Jyg"; */
+"jQJ-Td-Jyg.title" = "WordQuest";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "ohs-QO-d9S"; */
+"ohs-QO-d9S.normalTitle" = "Submit";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "oz2-9k-uLM"; */
+"oz2-9k-uLM.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "Privacy Policy"; ObjectID = "rfo-fE-AEe"; */
+"rfo-fE-AEe.title" = "Privacy Policy";
+
+/* Class = "UINavigationItem"; title = "About Us"; ObjectID = "s8l-H8-Edc"; */
+"s8l-H8-Edc.title" = "About Us";
+
+/* Class = "UINavigationItem"; title = "SnapIQ Challenge"; ObjectID = "z4S-Cp-W5k"; */
+"z4S-Cp-W5k.title" = "SnapIQ Challenge";

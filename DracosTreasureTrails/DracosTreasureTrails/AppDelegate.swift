@@ -2,18 +2,27 @@
 //  AppDelegate.swift
 //  DracosTreasureTrails
 //
-//  Created by jin fu on 2024/12/24.
+//  Created by Draco’s Treasure Trails on 2024/12/24.
 //
 
 import UIKit
+import FirebaseCore
+import FirebaseMessaging
+import AppsFlyerLib
 
 @main
-class AppDelegate: UIResponder, UIApplicationDelegate {
-
-
+class AppDelegate: UIResponder, UIApplicationDelegate, AppsFlyerLibDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        let appsFlyer = AppsFlyerLib.shared()
+        appsFlyer.appsFlyerDevKey = UIViewController.dracosAppsFlyerDevKey()
+        appsFlyer.appleAppID = "6739806546"
+        appsFlyer.waitForATTUserAuthorization(timeoutInterval: 50)
+        appsFlyer.delegate = self
+        
+        FirebaseApp.configure()
         return true
     }
 
@@ -31,6 +40,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
     }
 
+    func onConversionDataSuccess(_ conversionInfo: [AnyHashable : Any]) {
+        print("success appsflyer")
+    }
+    
+    func onConversionDataFail(_ error: Error) {
+        print("error appsflyer")
+    }
+    
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        Messaging.messaging().apnsToken = deviceToken
+    }
 
 }
 
