@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "dark-hexagonal-background-with-g.png",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
