@@ -236,7 +236,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = DracosTreasureTrails/DracosTreasureTrails.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DracosTreasureTrails/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Draco’s Treasure Trails";
@@ -273,7 +273,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_ENTITLEMENTS = DracosTreasureTrails/DracosTreasureTrails.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DracosTreasureTrails/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Draco’s Treasure Trails";

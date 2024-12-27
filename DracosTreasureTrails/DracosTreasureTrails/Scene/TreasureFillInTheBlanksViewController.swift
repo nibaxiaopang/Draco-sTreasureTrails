@@ -77,13 +77,13 @@ class TreasureFillInTheBlanksViewController: UIViewController {
         keyboardView.subviews.forEach { $0.removeFromSuperview() }
         
         // Create buttons for the alphabet dynamically
-        let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        let letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ🔙"
         let buttonSize: CGFloat = 50 // Square button size
-        let spacing: CGFloat = 10    // Spacing between buttons
+        let spacing: CGFloat = 8    // Spacing between buttons
         let totalButtonWidth = buttonSize + spacing
 
         // Calculate the number of columns based on keyboardView width
-        let availableWidth = keyboardView.bounds.width - 20 // 20 is padding for the edges
+        let availableWidth = UIScreen.main.bounds.width // 20 is padding for the edges
         let columns = Int(availableWidth / totalButtonWidth) // Number of buttons per row dynamically calculated
 //        let columns = Int(availableWidth / totalButtonWidth)
 
@@ -163,13 +163,27 @@ class TreasureFillInTheBlanksViewController: UIViewController {
 
             if self.timeRemaining <= 0 {
                 self.timer?.invalidate()
-                self.showAlert(title: "Time's Up!", message: "You ran out of time!")
+                self.showGameOverAlert(title: "Time's Up!", message: "You ran out of time!")
             }
         }
+    }
+    
+    func findLastUppercaseIndex(in array: [String]) -> Int? {
+        let uppercasePattern = "[A-Z]"
+        
+        return array.lastIndex(where: { $0.range(of: uppercasePattern, options: .regularExpression) != nil })
     }
 
     @objc func alphabetButtonTapped(_ sender: UIButton) {
         guard let letter = sender.titleLabel?.text else { return }
+        
+        if letter == "🔙"  {
+            if let index = findLastUppercaseIndex(in: blanks) {
+                blanks[index] = "_"
+                blanksCollectionView.reloadData()
+            }
+            return
+        }
 
         // Add the letter to the first blank space
         if let index = blanks.firstIndex(of: "_") {
@@ -193,6 +207,15 @@ class TreasureFillInTheBlanksViewController: UIViewController {
     func showAlert(title: String, message: String) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
+    }
+    
+    func showGameOverAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let ok = UIAlertAction(title: "OK", style: .default) { _ in
+            self.navigationController?.popViewController(animated: true)
+        }
+        alert.addAction(ok)
         present(alert, animated: true)
     }
 }
